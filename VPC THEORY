@@ -1,0 +1,10 @@
+VPC : 
+Vertiaul private cloud is logically isolated virtual n/w created inside a cloud environment with full control over IP address, subnet, routing and security. Main moto is to provide isolation from other networks.
+
+Main componensts of VPC : 
+1. Subnet - Range of IP address isolated inside a VPC that tied to a single AZ.
+2. Route table - It defines how traffic flow within VPC and outside.
+3. Internet gateway - Allow two way communication b/w  public instances in VPC and internet.
+4. NAT Gateway - It'll allow the private instance to access the internet without publicly exposed.
+5. Secuirty group - To control inbound and outbound traffic at instance level and here traffic is stateful, Meaning it'll rember the outbound traffic and automatically allow the respective respose. No need to explicitly mention it.
+6. NACL - To control inbound and outbound traffic at n/w level and here traffic is stateless, Meaning it'll not remember the traffic. We need to explicitly mention/allow/deny the inbound and outbound traffics.
